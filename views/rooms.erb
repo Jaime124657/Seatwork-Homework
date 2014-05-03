@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> My Hotel </title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+   <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home.erb">Hotel blah blah</a><!-- this is where you set the navigation title -->
+        </div>
+        <div class="collapse navbar-collapse"><!-- collapse allows for this navbar to be used in mobile devices -->
+          <ul class="nav navbar-nav"><!-- this is the list of navigation options in your navbar -->
+            <li><a href="about.erb">About</a></li>
+            <li><a href="rooms.erb">List of Rooms</a></li>
+			<li><a href="reserve.erb">Reserve a Room</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <br/><br/><br/>
+    <div class="container">
+      <div class="row">
+     </div>
+    </div>
+	<br>
+	<div class="container">
+      <div class="row">
+       <div class="col-md-12">
+        <!-- Basic Table -->
+        <h1>Deluxe Suites</h1>
+        <table class="table">
+          <thead>
+            <td>Room Number</td>
+            <td>Number of Beds</td>
+            <td>Equipment Details</td>
+			<td>Price</td>
+          </thead>
+          <tr>
+            <td>101</td>
+            <td>3</td>
+            <td>2 LCD TVs, 1 Kitchen with stove and fridge</td>
+			<td>P15,500++</td>
+          </tr>
+          <tr>
+            <td>102</td>
+            <td>2</td>
+            <td>1 LCD TV, 1 Kitchen with stove and fridge</td>
+			<td>P10,500++</td>
+          </tr>
+        </table>
+       </div>
+    </div>
+
+    <!-- you can add more than one row div in your container -->
+    <div class="row">
+       <div class="col-md-12">
+        <!-- Striped Table -->
+        <h1>Sweet Suites</h1>
+        <table class="table table-striped"><!-- just added a 2nd class for table styling -->
+          <thead>
+            <<td>Room Number</td>
+            <td>Number of Beds</td>
+            <td>Equipment Details</td>
+			<td>Price</td>
+          </thead>
+          <tr>
+            <td>201</td>
+            <td>2</td>
+            <td>2 LCD TVs, 1 fridge</td>
+			<td>P9,500++</td>
+          </tr>
+          <tr>
+            <td>202</td>
+            <td>2</td>
+            <td>1 LCD TV, 1 fridge</td>
+			<td>P9,500++</td>
+          </tr>
+          <tr>
+            <td>203</td>
+            <td>1</td>
+            <td>1 LCD TV, 1 fridge</td>
+			<td>P8,500++</td>>
+          </tr>
+        </table>
+       </div>
+    </div>
+
+    <div class="row">
+       <div class="col-md-12">
+        <!-- Condensed Table -->
+        <h1>Regular Suites</h1>
+        <table class="table table-condensed"><!-- just added a 2nd class for table styling -->
+          <thead>
+            <<td>Room Number</td>
+            <td>Number of Beds</td>
+            <td>Equipment Details</td>
+			<td>Price</td>
+          </thead>
+          <tr class="active">
+             <td>301</td>
+            <td>2</td>
+            <td>1 fridge</td>
+			<td>P6,500++</td>
+          </tr>
+          <tr class="success">
+            <td>302</td>
+            <td>1</td>
+            <td>1 LCD TV, 1 fridge</td>
+			<td>P6,000++</td>
+          </tr>
+          <tr class="warning">
+           <td>303</td>
+            <td>1</td>
+            <td>1 fridge</td>
+			<td>P5,000++</td>>
+          </tr>
+          <!-- can also be added on a per cell level -->
+          <tr>
+            
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> My Hotel </title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+   <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home.erb">Hotel blah blah</a><!-- this is where you set the navigation title -->
+        </div>
+        <div class="collapse navbar-collapse"><!-- collapse allows for this navbar to be used in mobile devices -->
+          <ul class="nav navbar-nav"><!-- this is the list of navigation options in your navbar -->
+            <li><a href="about.erb">About</a></li>
+            <li><a href="rooms.erb">List of Rooms</a></li>
+			<li><a href="reserve.erb">Reserve a Room</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <br/><br/><br/>
+    <div class="container">
+      <div class="row">
+     </div>
+    </div>
+	<br>
+	<div class="container">
+      <div class="row">
+        <div class="col-md-6"><!-- can be less than 12 -->
+          <h3>Reservation Form</h3>
+          <form method="POST" action="/reserveform" role="form">
+            <!-- group labels and inputs together using a form-group div -->
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" name="lastName" placeholder="Enter last name">
+            </div>
+			<div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" name="firstName" placeholder="Enter first name">
+            </div>
+			<div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control" name="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="CCNumber">Credit Card number</label>
+              <input type="text" class="form-control" name="ccNumber" placeholder="Enter credit card number">
+            </div>
+			<div class="form-group">
+              <label for="date">Dates of reservation</label>
+              <input type="Date" class="form-control" name="date1" placeholder="mm/dd">
+              <input type="Date" class="form-control" name="date2" placeholder="mm/dd">
+            </div>
+			<div class="form-group">
+            <label for="type">Kind of suite</label>
+			<select name="kind">
+				<option value="101">Room 101</option>
+				<option value="102">Room 102</option>
+				<option value="103">Room 103</option>
+				<option value="201">Room 201</option>
+				<option value="202">Room 202</option>
+				<option value="203">Room 203</option>
+				<option value="301">Room 301</option>
+				<option value="302">Room 302</option>
+				<option value="303">Room 303</option>
+			</select>
+			</div>
+            <input type="submit" value="Reserve" />
+          </form>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
